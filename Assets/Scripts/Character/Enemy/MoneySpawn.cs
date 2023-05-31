@@ -6,8 +6,6 @@ namespace Character.Enemy
 {
     public class MoneySpawn : MonoBehaviour
     {
-        [SerializeField] private Death _death;
-
         private IGameFactory _gameFactory;
         private int _moneyCount;
 
@@ -17,17 +15,17 @@ namespace Character.Enemy
         public void Initialize(int moneyCount) => 
             _moneyCount = moneyCount;
 
-        private void OnEnable() => 
-            _death.CharacterDied += OnCharacterDied;
-
-        private void OnCharacterDied()
-        {
-            var money = _gameFactory.CreateMoney(transform.position);
-            money.GetComponent<Money>().SetCount(_moneyCount);
-        }
-
-        private void OnDisable() => 
-            _death.CharacterDied -= OnCharacterDied;
+        // private void OnEnable() =>
+        //     _death.CharacterDied += OnCharacterDied;
+        //
+        // private void OnCharacterDied()
+        // {
+        //     var money = _gameFactory.CreateMoney(transform.position);
+        //     money.GetComponent<Money>().SetCount(_moneyCount);
+        // }
+        //
+        // private void OnDisable() =>
+        //     _death.CharacterDied -= OnCharacterDied;
 
     }
 }

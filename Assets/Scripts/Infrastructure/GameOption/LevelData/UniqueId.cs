@@ -2,8 +2,8 @@
 
 namespace Infrastructure.GameOption.LevelData
 {
-    public class EnemySpawnArea : MonoBehaviour
+    public class UniqueId: MonoBehaviour
     {
-
+        public string Id;
     }
 }

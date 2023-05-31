@@ -42,7 +42,7 @@ namespace Infrastructure.StateMachine.State
         {
             LevelStaticData levelData = _staticDataService.ForLevel(SceneManager.GetActiveScene().name);
             GameObject hero = _gameFactory.CreateHero(levelData.InitialHeroPosition);
-            Camera.main.GetComponent<CameraController>().Character = hero;
+            _gameFactory.CreateCamera();
             _gameFactory.CreateHud();
             _uiFactory.CreateUIRoot();
             _stateMachine.Enter<GameLoopState>();

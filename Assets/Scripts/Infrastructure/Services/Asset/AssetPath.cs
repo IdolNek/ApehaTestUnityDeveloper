@@ -7,5 +7,6 @@
         public const string UIRootPath = "UI/UIRoot";
         public const string BaseTrigger = "InfrastructurePrefab/BaseTrigger";
         public const string Money = "Enemy/10000dol";
+        public const string MainCamera = "InfrastructurePrefab/MainCamera";
     }
 }
