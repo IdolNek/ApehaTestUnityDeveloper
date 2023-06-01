@@ -45,7 +45,18 @@ namespace Infrastructure.StateMachine.State
             _gameFactory.CreateCamera();
             _gameFactory.CreateHud();
             _uiFactory.CreateUIRoot();
+            InitLevelEnemySpawner();
             _stateMachine.Enter<GameLoopState>();
+        }
+
+        private void InitLevelEnemySpawner()
+        {
+            string sceneKey = SceneManager.GetActiveScene().name;
+            LevelStaticData levelData = _staticDataService.ForLevel(sceneKey);
+            foreach (EnemySpawnerData spawnerData in levelData.EnemySpawnersData)
+            {
+                GameObject enemy = _gameFactory.CreateEnemy(spawnerData.EnemyTypeId, spawnerData.Position);
+            }
         }
     }
 }

@@ -19,4 +19,4 @@ MonoBehaviour:
   AttackRange: 1
   AttackCountDown: 1
   MoneyCount: 1
-  EnemyPrefab: {fileID: 2614242618169837365, guid: 14470fd151bcc4742b90348391998ddb, type: 3}
+  EnemyPrefab: {fileID: 6081590259069819119, guid: a45e4cf757c8dd440a1125d625c0fc07, type: 3}

@@ -48,12 +48,10 @@ namespace Infrastructure.Factory
             return hud;
         }
 
-        public GameObject CreateEnemy(EnemyTypeId enemyTypeId)
+        public GameObject CreateEnemy(EnemyTypeId enemyTypeId, Vector3 at)
         {
             EnemyStaticData enemyData = _staticData.ForEnemy(enemyTypeId);
-            string sceneKey = SceneManager.GetActiveScene().name;
-            LevelStaticData levelData = _staticData.ForLevel(sceneKey);
-            GameObject enemy = Object.Instantiate(enemyData.EnemyPrefab);
+            GameObject enemy = Object.Instantiate(enemyData.EnemyPrefab, at, Quaternion.identity);
             MoneySpawn moneySpawn = enemy.GetComponent<MoneySpawn>();
             moneySpawn.Initialize(enemyData.MoneyCount);
             moneySpawn.Construct(this);
