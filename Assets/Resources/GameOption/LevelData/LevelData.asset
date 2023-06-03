@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LevelData
   m_EditorClassIdentifier: 
   _levelKey: GameScene
-  _initialHeroPosition: {x: -0.022, y: -0.013, z: 3.333}
+  _initialHeroPosition: {x: -0.022, y: -0.013, z: 7.74}
   _enemySpawnersData:
   - Id: GameScene_901fc564-cc9d-4a05-9ed0-5c0787cdd2ed
     EnemyTypeId: 0

@@ -450,7 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartCharacterCount: 1
   m_StartCameraCount: 1
-  m_StartKinematicObjectCount: 0
+  m_StartKinematicObjectCount: 10
   m_AutoSyncTransforms: 0
 --- !u!114 &1034904702
 MonoBehaviour:
@@ -896,7 +896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6002117250575432599, guid: 89c0538d0be852942a22e422a87094f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.333
+      value: 7.74
       objectReference: {fileID: 0}
     - target: {fileID: 6002117250575432599, guid: 89c0538d0be852942a22e422a87094f0, type: 3}
       propertyPath: m_LocalRotation.w

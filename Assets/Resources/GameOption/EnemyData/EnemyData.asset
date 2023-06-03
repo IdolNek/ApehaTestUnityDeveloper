@@ -16,7 +16,7 @@ MonoBehaviour:
   Hp: 9
   Damage: 1
   MoveSpeed: 5
-  AttackRange: 1
-  AttackCountDown: 1
+  AttackRange: 5
+  AttackCountDown: 0.5
   MoneyCount: 1
   EnemyPrefab: {fileID: 6081590259069819119, guid: a45e4cf757c8dd440a1125d625c0fc07, type: 3}

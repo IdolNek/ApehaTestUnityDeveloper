@@ -4360,8 +4360,8 @@ MonoBehaviour:
         m_AudioConfig: {fileID: 0}
         m_AudioClips: []
   m_UIMonitorID: 0
-  m_Icon: {fileID: 0}
-  m_ShowCrosshairsOnAim: 1
+  m_Icon: {fileID: 21300014, guid: 5fb67c614ba76ca45a811c8e1f7be476, type: 3}
+  m_ShowCrosshairsOnAim: 0
   m_CenterCrosshairs: {fileID: 0}
   m_QuadrantOffset: 5
   m_MaxQuadrantSpread: 10
@@ -4574,6 +4574,7 @@ GameObject:
   - component: {fileID: 5193589989421398076}
   - component: {fileID: 5193589989421398050}
   - component: {fileID: 5193589989421398077}
+  - component: {fileID: 1923248498656483079}
   m_Layer: 31
   m_Name: CapsuleCollider
   m_TagString: Untagged
@@ -4638,6 +4639,18 @@ MonoBehaviour:
   m_PositionBone: {fileID: 2433974099453867097}
   m_HeightOverride: -1
   m_CenterOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &1923248498656483079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5193589989421398079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b104c57576714779b53dd3d39ef357a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5193589989440989239
 GameObject:
   m_ObjectHideFlags: 0

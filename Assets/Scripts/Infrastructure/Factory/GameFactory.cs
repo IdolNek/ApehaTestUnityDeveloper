@@ -52,10 +52,10 @@ namespace Infrastructure.Factory
         {
             EnemyStaticData enemyData = _staticData.ForEnemy(enemyTypeId);
             GameObject enemy = Object.Instantiate(enemyData.EnemyPrefab, at, Quaternion.identity);
+            enemy.GetComponent<MeleeAttack>().Construct(enemyData.AttackRange , enemyData.AttackCountDown);
             MoneySpawn moneySpawn = enemy.GetComponent<MoneySpawn>();
             moneySpawn.Initialize(enemyData.MoneyCount);
             moneySpawn.Construct(this);
-            enemy.GetComponent<NavMeshAgent>().speed = enemyData.MoveSpeed;
             return enemy;
         }        
         public GameObject CreateMoney(Vector3 position)
