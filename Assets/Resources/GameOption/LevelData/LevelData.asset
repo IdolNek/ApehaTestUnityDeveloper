@@ -15,18 +15,21 @@ MonoBehaviour:
   _levelKey: GameScene
   _initialHeroPosition: {x: -0.022, y: -0.013, z: 7.74}
   _enemySpawnersData:
-  - Id: GameScene_901fc564-cc9d-4a05-9ed0-5c0787cdd2ed
+  - Id: GameScene_7ed23a43-8442-40ea-af1f-c45615662ed8
     EnemyTypeId: 0
-    Position: {x: -2.35, y: 0.805, z: -2.43}
-  - Id: GameScene_fc69310e-cefa-46a4-a79e-e9cc13e009d6
-    EnemyTypeId: 0
-    Position: {x: 0, y: 0.805, z: -2.54}
-  - Id: GameScene_dedfe896-636b-4790-b13b-0136a14259cf
-    EnemyTypeId: 0
-    Position: {x: 2.89, y: 0.805, z: 0}
+    Position: {x: -1.41, y: 0.805, z: -8.23}
   - Id: GameScene_9176cba2-bff9-4f25-aeb3-138713a2cbf9
     EnemyTypeId: 0
     Position: {x: -4.37, y: 0.805, z: 0}
+  - Id: GameScene_fc69310e-cefa-46a4-a79e-e9cc13e009d6
+    EnemyTypeId: 0
+    Position: {x: 0, y: 0.805, z: -2.54}
+  - Id: GameScene_901fc564-cc9d-4a05-9ed0-5c0787cdd2ed
+    EnemyTypeId: 0
+    Position: {x: -2.35, y: 0.805, z: -2.43}
   - Id: GameScene_aa1d8409-98e7-4d35-8701-1b0cd5b9d7f8
     EnemyTypeId: 0
     Position: {x: 0, y: 0.805, z: 0}
+  - Id: GameScene_dedfe896-636b-4790-b13b-0136a14259cf
+    EnemyTypeId: 1
+    Position: {x: 2.89, y: 0.805, z: 0}
