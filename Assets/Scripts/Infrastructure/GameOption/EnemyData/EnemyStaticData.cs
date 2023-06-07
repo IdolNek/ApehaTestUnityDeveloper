@@ -10,10 +10,10 @@ namespace Infrastructure.GameOption.EnemyData
         public int Hp;
         [Range(1, 30)]
         public int Damage;
-        [Range(0.5f, 100)]
-        public float MoveSpeed;
-        [Range(0.1f, 100)]
+        [Range(3, 15)] 
         public float AttackRange;
+        [Range(0.1f, 100)]
+        public float StopAttackRange;
         [Range(0.1f, 5)]
         public float AttackCountDown;
 

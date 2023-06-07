@@ -8,6 +8,8 @@ using Infrastructure.Services.StaticData;
 using Infrastructure.Services.Windows;
 using Infrastructure.UI.Factory;
 using Opsive.UltimateCharacterController.Camera;
+using Opsive.UltimateCharacterController.Items.Actions;
+using Opsive.UltimateCharacterController.Traits;
 using SpawnPool;
 using UnityEngine;
 using UnityEngine.AI;
@@ -52,7 +54,10 @@ namespace Infrastructure.Factory
         {
             EnemyStaticData enemyData = _staticData.ForEnemy(enemyTypeId);
             GameObject enemy = Object.Instantiate(enemyData.EnemyPrefab, at, Quaternion.identity);
-            enemy.GetComponent<MeleeAttack>().Construct(enemyData.AttackRange , enemyData.AttackCountDown);
+            enemy.GetComponent<MeleeAttack>().Construct(enemyData.StopAttackRange , enemyData.AttackCountDown);
+            enemy.GetComponent<AttributeManager>().GetAttribute("Health").MaxValue = enemyData.Hp;
+            enemy.GetComponentInChildren<MeleeWeapon>().DamageAmount = enemyData.Damage;
+            enemy.GetComponentInChildren<AttackTrigger>().SetAttackRadiusTrigger(enemyData.AttackRange);
             MoneySpawn moneySpawn = enemy.GetComponent<MoneySpawn>();
             moneySpawn.Initialize(enemyData.MoneyCount);
             moneySpawn.Construct(this);
