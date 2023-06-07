@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d8823da20621a64f983d07c2fdd64c8, type: 3}
-  m_Name: GoblinFemale
+  m_Name: EnemyMaleBoss
   m_EditorClassIdentifier: 
-  EnemyTypeId: 0
-  Hp: 10
-  Damage: 1
-  AttackRange: 6
+  EnemyTypeId: 2
+  Hp: 20
+  Damage: 5
+  AttackRange: 8
   StopAttackRange: 3
-  AttackCountDown: 0.5
-  MoneyCount: 1
-  EnemyPrefab: {fileID: 6081590259069819119, guid: a45e4cf757c8dd440a1125d625c0fc07, type: 3}
+  AttackCountDown: 1
+  MoneyCount: 5
+  EnemyPrefab: {fileID: 7777098404450428343, guid: 830e5e80c49a5ea45a7be89e87405d8a, type: 3}

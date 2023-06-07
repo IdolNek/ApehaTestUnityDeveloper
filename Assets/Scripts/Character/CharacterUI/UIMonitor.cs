@@ -15,7 +15,7 @@ namespace Character.CharacterUI
         private float _maxHealthValue;
         private float _currentHealthValue;
 
-        private void OnEnable()
+        public void Initialize()
         {
             EventHandler.RegisterEvent<float, Vector3, Vector3, GameObject,
                 Collider>(_character, EventName, OnDamage);

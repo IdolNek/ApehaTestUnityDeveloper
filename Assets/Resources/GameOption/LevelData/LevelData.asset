@@ -18,9 +18,6 @@ MonoBehaviour:
   - Id: GameScene_682d6184-012f-4b9f-9e4b-6bd61401ae7f
     EnemyTypeId: 3
     Position: {x: -10.83, y: 0.805, z: -8.23}
-  - Id: GameScene_7ed23a43-8442-40ea-af1f-c45615662ed8
-    EnemyTypeId: 1
-    Position: {x: -2.85, y: 0.805, z: -8.23}
   - Id: GameScene_dedfe896-636b-4790-b13b-0136a14259cf
-    EnemyTypeId: 0
+    EnemyTypeId: 2
     Position: {x: 2.89, y: 0.805, z: -7.39}

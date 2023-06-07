@@ -12,9 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfb0e81b3f9ee74d947d3808b715609, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  Hp: 10
-  Damage: 5
-  MoveSpeed: 5
-  AttackRange: 10
-  AttackCountDown: 2
+  Hp: 50
   PlayerPrefab: {fileID: 2433974099454098295, guid: 67a3600b84047e841a823087c56e1ec5, type: 3}

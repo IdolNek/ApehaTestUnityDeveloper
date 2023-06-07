@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: GoblinWarrior
   m_EditorClassIdentifier: 
   EnemyTypeId: 1
-  Hp: 100
-  Damage: 5
-  MoveSpeed: 5
-  AttackRange: 4
+  Hp: 20
+  Damage: 3
+  AttackRange: 6
+  StopAttackRange: 3
   AttackCountDown: 1
-  MoneyCount: 10
-  EnemyPrefab: {fileID: 7777098404450428343, guid: 830e5e80c49a5ea45a7be89e87405d8a, type: 3}
+  MoneyCount: 2
+  EnemyPrefab: {fileID: 7777098404450428343, guid: dbba00d52fa5e444ab9b462e3e865871, type: 3}

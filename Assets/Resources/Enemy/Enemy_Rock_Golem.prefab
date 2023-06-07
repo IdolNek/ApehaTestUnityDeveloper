@@ -1641,12 +1641,12 @@ MonoBehaviour:
     m_Preset: {fileID: 0}
     m_BlockList: []
     m_Default: 1
-  m_PositioningMode: 1
+  m_PositioningMode: 0
   m_Grouping: -1
   m_MinRespawnTime: 2
   m_MaxRespawnTime: 3
-  m_ScheduleRespawnOnDeath: 1
-  m_ScheduleRespawnOnDisable: 1
+  m_ScheduleRespawnOnDeath: 0
+  m_ScheduleRespawnOnDisable: 0
   m_RespawnAudioClipSet:
     m_AudioConfig: {fileID: 0}
     m_AudioClips: []
@@ -1733,8 +1733,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterLocomotion: {fileID: 6535590847572413185}
   _localLookSource: {fileID: 6535590847572413184}
-  _immediateAttackDistance: 1.5
-  _stopMoveToTarget: 2.5
+  _immediateAttackDistance: 2
+  _stopMoveToTarget: 2.6
   _attackState: {fileID: 3681981927354602429}
 --- !u!114 &3681981927354602429
 MonoBehaviour:
@@ -2194,8 +2194,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.09549455
-  m_Center: {x: 0, y: 0.09549455, z: 0}
+  m_Radius: 10
+  m_Center: {x: 0, y: 9.4, z: 0}
 --- !u!54 &6535590847572389481
 Rigidbody:
   m_ObjectHideFlags: 0

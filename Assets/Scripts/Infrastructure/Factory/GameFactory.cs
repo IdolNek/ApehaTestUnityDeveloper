@@ -1,4 +1,5 @@
-﻿using Character.Enemy;
+﻿using Character.CharacterUI;
+using Character.Enemy;
 using Infrastructure.GameOption.EnemyData;
 using Infrastructure.GameOption.LevelData;
 using Infrastructure.GameOption.Player;
@@ -19,6 +20,7 @@ namespace Infrastructure.Factory
 {
     public class GameFactory : IGameFactory
     {
+        private const string HealthAttributeName = "Health";
 
         private readonly IAssetService _asset;
         private readonly IStaticDataService _staticData;
@@ -42,6 +44,7 @@ namespace Infrastructure.Factory
         {
             PlayerStaticData playerData = _staticData.PlayerConfig;
             _player = Object.Instantiate(playerData.PlayerPrefab, at, Quaternion.identity);
+            _player.GetComponent<AttributeManager>().GetAttribute(HealthAttributeName).MaxValue = playerData.Hp;
             return _player;
         }
         public GameObject CreateHud()
@@ -55,9 +58,10 @@ namespace Infrastructure.Factory
             EnemyStaticData enemyData = _staticData.ForEnemy(enemyTypeId);
             GameObject enemy = Object.Instantiate(enemyData.EnemyPrefab, at, Quaternion.identity);
             enemy.GetComponent<MeleeAttack>().Construct(enemyData.StopAttackRange , enemyData.AttackCountDown);
-            enemy.GetComponent<AttributeManager>().GetAttribute("Health").MaxValue = enemyData.Hp;
+            enemy.GetComponent<AttributeManager>().GetAttribute(HealthAttributeName).MaxValue = enemyData.Hp;
             enemy.GetComponentInChildren<MeleeWeapon>().DamageAmount = enemyData.Damage;
             enemy.GetComponentInChildren<AttackTrigger>().SetAttackRadiusTrigger(enemyData.AttackRange);
+            enemy.GetComponent<UIMonitor>().Initialize();
             MoneySpawn moneySpawn = enemy.GetComponent<MoneySpawn>();
             moneySpawn.Initialize(enemyData.MoneyCount);
             moneySpawn.Construct(this);

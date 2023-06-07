@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6623370654039856490}
   - component: {fileID: 2442068857356676723}
   - component: {fileID: 7722350505453004116}
+  - component: {fileID: -587364960822840394}
   m_Layer: 28
   m_Name: PickupMachete
   m_TagString: Untagged
@@ -96,7 +97,7 @@ BoxCollider:
   m_GameObject: {fileID: 1786190086907930876}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.108065605, y: 1.0504899, z: 0.31594467}
   m_Center: {x: -0.00000047683716, y: 0.39539552, z: -0.012149811}
@@ -109,7 +110,7 @@ SphereCollider:
   m_GameObject: {fileID: 1786190086907930876}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.52524495
   m_Center: {x: -0.00000047683716, y: 0.39539552, z: -0.012149811}
@@ -183,3 +184,17 @@ MonoBehaviour:
   m_OnRespawnEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-587364960822840394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786190086907930876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e623f540eec94f59b723f65d1a04b5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sphereCollider: {fileID: 6623370654039856490}
+  _triggerTimeDelay: 10

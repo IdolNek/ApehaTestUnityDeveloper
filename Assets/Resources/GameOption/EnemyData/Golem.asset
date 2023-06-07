@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Golem
   m_EditorClassIdentifier: 
   EnemyTypeId: 3
-  Hp: 100
-  Damage: 5
-  MoveSpeed: 5
-  AttackRange: 5
+  Hp: 50
+  Damage: 10
+  AttackRange: 9
+  StopAttackRange: 4
   AttackCountDown: 1
   MoneyCount: 2
   EnemyPrefab: {fileID: 6535590847572614903, guid: 4c85ea4190e621a4bbe287d3bade0cde, type: 3}

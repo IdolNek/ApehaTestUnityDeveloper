@@ -7,7 +7,7 @@ namespace Character.Enemy
         [SerializeField] private MeleeAttack _meleeAttack;
         private SphereCollider _sphereCollider;
 
-        private void Start() => 
+        private void Awake() => 
             _sphereCollider = GetComponent<SphereCollider>();
 
         private void OnTriggerEnter(Collider other)

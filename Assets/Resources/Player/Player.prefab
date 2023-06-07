@@ -4703,7 +4703,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 2
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
     - m_States:
       - m_Name: Default
         m_Preset: {fileID: 0}
@@ -4716,7 +4717,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 3
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
   m_RequireInAirMeleeAbilityInAir: 1
   m_RequireCounterAttackAbility: 0
   m_AimItemSubstateIndexAddition: 100
@@ -4731,7 +4733,7 @@ MonoBehaviour:
     m_Bits: 3758096345
   m_TriggerInteraction: 1
   m_DamageProcessor: {fileID: 0}
-  m_DamageAmount: 30
+  m_DamageAmount: 3
   m_ImpactForce: 2
   m_ImpactForceFrames: 15
   m_ImpactStateName: 
@@ -4759,7 +4761,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 0
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
   m_Trail: {fileID: 1913255639696654, guid: 193bb54cfe1bd924680c02a588b9b044, type: 3}
   m_TrailVisibility: 0
   m_TrailSpawnDelay: 0
@@ -5318,7 +5321,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 2
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
     - m_States:
       - m_Name: Default
         m_Preset: {fileID: 0}
@@ -5331,7 +5335,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 3
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
     - m_States:
       - m_Name: Default
         m_Preset: {fileID: 0}
@@ -5344,7 +5349,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 4
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
   m_RequireInAirMeleeAbilityInAir: 1
   m_RequireCounterAttackAbility: 0
   m_AimItemSubstateIndexAddition: 100
@@ -5359,7 +5365,7 @@ MonoBehaviour:
     m_Bits: 3758096345
   m_TriggerInteraction: 1
   m_DamageProcessor: {fileID: 0}
-  m_DamageAmount: 60
+  m_DamageAmount: 10
   m_ImpactForce: 1
   m_ImpactForceFrames: 10
   m_ImpactStateName: 
@@ -5387,7 +5393,8 @@ MonoBehaviour:
       m_ItemSubstateIndex: 0
       m_AudioClipSet:
         m_AudioConfig: {fileID: 0}
-        m_AudioClips: []
+        m_AudioClips:
+        - {fileID: 8300000, guid: 22733101cb097894e81b9631c49efbe3, type: 3}
   m_Trail: {fileID: 1913255639696654, guid: 193bb54cfe1bd924680c02a588b9b044, type: 3}
   m_TrailVisibility: 0
   m_TrailSpawnDelay: 0
