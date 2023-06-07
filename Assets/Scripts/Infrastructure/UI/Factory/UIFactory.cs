@@ -2,16 +2,17 @@
 using Infrastructure.GameOption.WindowsData;
 using Infrastructure.Services.Asset;
 using Infrastructure.Services.StaticData;
-using UI;
 using UnityEngine;
 
 namespace Infrastructure.UI.Factory
 {
     class UIFactory : IUIFactory
     {
+        private const string UIRootPath = "UI/UIRoot";
+        
         private readonly IAssetService _asset;
         private readonly IStaticDataService _staticData;
-        private const string uiRootPath = "UI/UIRoot";
+        
         private IGameFactory _gameFactory;
         private Transform _uiRoot;
 
@@ -20,12 +21,20 @@ namespace Infrastructure.UI.Factory
             _asset = asset;
             _staticData = staticData;
         }
-        public void CreateGameMenuWindow()
+        
+        public void CreateUIRoot() =>
+            _uiRoot = _asset.Instantiate(UIRootPath).transform;
+
+        public void CreateStartGameMenu()
         {
-            WindowConfig windowConfig = _staticData.ForWindow(WindowsId.GameMenu);
+            WindowConfig windowsConfig = _staticData.ForWindow(WindowsId.StartGameMenu);
+            GameObject window = Object.Instantiate(windowsConfig.WindowPrefab, _uiRoot);
         }
 
-        public void CreateUIRoot() =>
-            _uiRoot = _asset.Instantiate(uiRootPath).transform;
+        public void CreateGameOverMenu()
+        {
+            WindowConfig windowsConfig = _staticData.ForWindow(WindowsId.GameOverMenu);
+            GameObject window = Object.Instantiate(windowsConfig.WindowPrefab, _uiRoot);
+        }
     }
 }

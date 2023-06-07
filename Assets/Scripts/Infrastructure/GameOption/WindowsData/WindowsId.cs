@@ -2,8 +2,8 @@
 {
     public enum WindowsId
     {
-        None,
-        GameMenu,
+        StartGameMenu,
+        GameOverMenu,
 
     }
 }

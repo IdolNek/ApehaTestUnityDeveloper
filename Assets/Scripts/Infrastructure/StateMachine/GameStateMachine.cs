@@ -16,7 +16,7 @@ namespace Infrastructure.StateMachine
             {
                 [typeof(BootStrapState)] = new BootStrapState(this, sceneLoader, allServices),
                 [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, allServices.Single<IGameFactory>(), allServices.Single<IStaticDataService>()
-                    , allServices.Single<IUIFactory>(), allServices.Single<IStateMachineBase>()),
+                    , allServices.Single<IUIFactory>()),
                 [typeof(GameLoopState)] = new GameLoopState(this),
             };
         }

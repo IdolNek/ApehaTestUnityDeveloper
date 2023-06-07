@@ -2,7 +2,6 @@
 using Infrastructure.GameOption.LevelData;
 using Infrastructure.Services.StaticData;
 using Infrastructure.UI.Factory;
-using Opsive.UltimateCharacterController.Camera;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,18 +14,16 @@ namespace Infrastructure.StateMachine.State
         private readonly IGameFactory _gameFactory;
         private readonly IStaticDataService _staticDataService;
         private readonly IUIFactory _uiFactory;
-        private readonly IStateMachineBase _characterStateMachine;
 
         public LoadLevelState(GameStateMachine stateMachine, Infrastructure.SceneLoader sceneLoader
             , IGameFactory gameFactory, IStaticDataService staticDataService
-            , IUIFactory uiFactory, IStateMachineBase characterStateMachine)
+            , IUIFactory uiFactory)
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
             _gameFactory = gameFactory;
             _staticDataService = staticDataService;
             _uiFactory = uiFactory;
-            _characterStateMachine = characterStateMachine;
         }
 
         public void Enter(string sceneName)
@@ -46,7 +43,9 @@ namespace Infrastructure.StateMachine.State
             _gameFactory.CreateHud();
             _uiFactory.CreateUIRoot();
             InitLevelEnemySpawner();
+            _uiFactory.CreateStartGameMenu();
             _stateMachine.Enter<GameLoopState>();
+            
         }
 
         private void InitLevelEnemySpawner()

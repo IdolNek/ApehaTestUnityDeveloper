@@ -1,6 +1,5 @@
 ﻿using Infrastructure.Factory;
 using Infrastructure.Services.Asset;
-using Infrastructure.Services.PlayerProgress;
 using Infrastructure.Services.ServiceLocater;
 using Infrastructure.Services.StaticData;
 using Infrastructure.Services.Windows;
@@ -42,14 +41,13 @@ namespace Infrastructure.StateMachine.State
         {
             RegisterStaticData();
             RegisterAssetService();
-            RegisterProgressService();
             RegisterUiFactory();
             RegisterWindowsService();
             RegisterGameFactory();
         }
         private void RegisterGameFactory() =>
             _allServices.RegisterSingle<IGameFactory>(new GameFactory(_allServices.Single<IAssetService>()
-                , _allServices.Single<IStaticDataService>(), _allServices.Single<IProgressService>()
+                , _allServices.Single<IStaticDataService>()
                 , _allServices.Single<IWindowsService>()
                 , _allServices.Single<IUIFactory>()));
 
@@ -59,9 +57,6 @@ namespace Infrastructure.StateMachine.State
         private void RegisterUiFactory() =>
             _allServices.RegisterSingle<IUIFactory>(new UIFactory(_allServices.Single<IAssetService>()
                 , _allServices.Single<IStaticDataService>()));
-
-        private void RegisterProgressService() =>
-            _allServices.RegisterSingle<IProgressService>(new ProgressService());
 
         private void RegisterAssetService() =>
             _allServices.RegisterSingle<IAssetService>(new AssetService());

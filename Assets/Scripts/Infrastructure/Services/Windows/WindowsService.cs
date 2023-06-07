@@ -1,4 +1,5 @@
-﻿using Infrastructure.GameOption.WindowsData;
+﻿using System;
+using Infrastructure.GameOption.WindowsData;
 using Infrastructure.UI.Factory;
 
 namespace Infrastructure.Services.Windows
@@ -14,12 +15,14 @@ namespace Infrastructure.Services.Windows
         {
             switch (windowsId)
             {
-                case WindowsId.None:
+                case WindowsId.StartGameMenu:
+                    _uiFactory.CreateStartGameMenu();
                     break;
-                case WindowsId.GameMenu:
-                    _uiFactory.CreateGameMenuWindow();
+                case WindowsId.GameOverMenu:
+                    _uiFactory.CreateGameOverMenu();
                     break;
             }
+            
         }
     }
 }

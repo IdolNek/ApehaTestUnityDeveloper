@@ -1,20 +1,15 @@
 ﻿using Character.CharacterUI;
 using Character.Enemy;
 using Infrastructure.GameOption.EnemyData;
-using Infrastructure.GameOption.LevelData;
 using Infrastructure.GameOption.Player;
 using Infrastructure.Services.Asset;
-using Infrastructure.Services.PlayerProgress;
 using Infrastructure.Services.StaticData;
 using Infrastructure.Services.Windows;
 using Infrastructure.UI.Factory;
 using Opsive.UltimateCharacterController.Camera;
 using Opsive.UltimateCharacterController.Items.Actions;
 using Opsive.UltimateCharacterController.Traits;
-using SpawnPool;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.SceneManagement;
 
 namespace Infrastructure.Factory
 {
@@ -24,19 +19,17 @@ namespace Infrastructure.Factory
 
         private readonly IAssetService _asset;
         private readonly IStaticDataService _staticData;
-        private readonly IProgressService _progress;
         private readonly IWindowsService _windowsService;
         private readonly IUIFactory _uIFactory;
         private GameObject _player;
 
         public GameObject Player => _player;
 
-        public GameFactory(IAssetService asset, IStaticDataService staticData,
-            IProgressService progress, IWindowsService windowsService, IUIFactory uIFactory)
+        public GameFactory(IAssetService asset, IStaticDataService staticData
+            , IWindowsService windowsService, IUIFactory uIFactory)
         {
             _asset = asset;
             _staticData = staticData;
-            _progress = progress;
             _windowsService = windowsService;
             _uIFactory = uIFactory;
         }
@@ -62,9 +55,6 @@ namespace Infrastructure.Factory
             enemy.GetComponentInChildren<MeleeWeapon>().DamageAmount = enemyData.Damage;
             enemy.GetComponentInChildren<AttackTrigger>().SetAttackRadiusTrigger(enemyData.AttackRange);
             enemy.GetComponent<UIMonitor>().Initialize();
-            MoneySpawn moneySpawn = enemy.GetComponent<MoneySpawn>();
-            moneySpawn.Initialize(enemyData.MoneyCount);
-            moneySpawn.Construct(this);
             return enemy;
         }        
         public GameObject CreateMoney(Vector3 position)
