@@ -12,9 +12,7 @@ namespace Character.CharacterUI
         [SerializeField] private HealthBar _healthBar;
         [SerializeField] private AttributeManager _attributeManager;
         [SerializeField] private GameObject _character;
-        [SerializeField]
         private float _maxHealthValue;
-        [SerializeField]
         private float _currentHealthValue;
 
         private void OnEnable()

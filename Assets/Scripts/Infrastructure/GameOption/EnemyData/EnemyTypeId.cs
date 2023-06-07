@@ -4,5 +4,7 @@
     {
         GoblinFemale,
         GoblinMale,
+        GoblinFemaleBoss,
+        Golem,
     }
 }
