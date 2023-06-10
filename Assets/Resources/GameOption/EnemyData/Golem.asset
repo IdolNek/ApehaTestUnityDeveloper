@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTypeId: 3
   Hp: 50
-  Damage: 10
-  AttackRange: 9
+  Damage: 15
+  AttackRange: 15
   StopAttackRange: 4
-  AttackCountDown: 1
+  AttackCountDown: 2
   MoneyCount: 2
   EnemyPrefab: {fileID: 6535590847572614903, guid: 4c85ea4190e621a4bbe287d3bade0cde, type: 3}

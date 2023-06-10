@@ -2930,7 +2930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fc3c5ec9fe8c241bc7a9c89fb57734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RemoveAllOnDeath: 1
+  m_RemoveAllOnDeath: 0
   m_LoadDefaultLoadoutOnRespawn: 1
   m_UnequippedStateName: Unequipped
   m_OnAddItemEvent:

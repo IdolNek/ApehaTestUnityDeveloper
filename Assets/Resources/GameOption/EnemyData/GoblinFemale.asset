@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTypeId: 0
   Hp: 10
-  Damage: 1
-  AttackRange: 6
+  Damage: 5
+  AttackRange: 15
   StopAttackRange: 3
   AttackCountDown: 0.5
   MoneyCount: 1

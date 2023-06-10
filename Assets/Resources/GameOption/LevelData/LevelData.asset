@@ -13,11 +13,47 @@ MonoBehaviour:
   m_Name: LevelData
   m_EditorClassIdentifier: 
   _levelKey: GameScene
-  _initialHeroPosition: {x: -0.022, y: -0.013, z: 7.74}
+  _initialHeroPosition: {x: -7.5221357, y: 5.2960143, z: -66.7384}
   _enemySpawnersData:
-  - Id: GameScene_682d6184-012f-4b9f-9e4b-6bd61401ae7f
+  - Id: GameScene_3f7d8357-048a-4f43-9c3e-4c364c5ffd7c
     EnemyTypeId: 3
-    Position: {x: -10.83, y: 0.805, z: -8.23}
-  - Id: GameScene_dedfe896-636b-4790-b13b-0136a14259cf
+    Position: {x: 2.26, y: -4.11, z: 73.06}
+  - Id: GameScene_b8cacc63-d82a-4170-9bfb-d4d36c73c9c5
+    EnemyTypeId: 1
+    Position: {x: -0.19, y: -4.11, z: 70.5}
+  - Id: GameScene_79ec1ff1-3bb9-4fee-b6fe-6a7542c09992
+    EnemyTypeId: 1
+    Position: {x: -0.19, y: -4.11, z: 70.5}
+  - Id: GameScene_7cd76b87-76f5-4499-833d-94418225e8bd
+    EnemyTypeId: 1
+    Position: {x: 4.23, y: -4.11, z: 70.5}
+  - Id: GameScene_0a3afcce-e7cf-4f34-b405-2f8135119ac1
+    EnemyTypeId: 1
+    Position: {x: 2.26, y: -4.11, z: 70.46}
+  - Id: GameScene_2c1aca52-e90a-462e-8e10-0061c133b340
+    EnemyTypeId: 1
+    Position: {x: 2.26, y: -4.11, z: 54.63}
+  - Id: GameScene_561e149d-4670-4988-b9a1-69f5af2b2f2a
+    EnemyTypeId: 1
+    Position: {x: 2.26, y: -4.11, z: 37.34}
+  - Id: GameScene_73261061-225e-4f7a-877c-f603762d9dc7
+    EnemyTypeId: 0
+    Position: {x: 2.57, y: 0.86, z: 5.6}
+  - Id: GameScene_0d470139-eebb-460e-8c79-b9a2d19b3015
+    EnemyTypeId: 0
+    Position: {x: 0.80640966, y: 0.86, z: 4.34}
+  - Id: GameScene_74f3dd4f-e1db-4bc6-af10-705689d44872
+    EnemyTypeId: 0
+    Position: {x: 0.80640966, y: 0.86, z: 6.71}
+  - Id: GameScene_f33bb210-8440-4311-a510-3106d5adc722
+    EnemyTypeId: 0
+    Position: {x: -23.3, y: 5.46, z: -32.81}
+  - Id: GameScene_4b192705-1bcf-45e3-82c8-9a00ec6bda32
     EnemyTypeId: 2
-    Position: {x: 2.89, y: 0.805, z: -7.39}
+    Position: {x: -26.34, y: 5.46, z: -32.81}
+  - Id: GameScene_9673aafd-fcb9-4139-99bc-c6123c9b05eb
+    EnemyTypeId: 0
+    Position: {x: 0.80640966, y: 5.46, z: -30.76}
+  - Id: GameScene_0ce87524-1845-4e09-acc3-2744761d0fb0
+    EnemyTypeId: 0
+    Position: {x: 0.80640966, y: 5.46, z: -23.22}
